@@ -78,19 +78,6 @@ Default limits:
 
 The agent stops requesting information when a budget is exhausted and falls back to the safest useful recommendation based on available information.
 
-## Partial failure
-
-Batch execution records every action separately.
-
-Example:
-
-- task A: executed
-- task B: executed
-- task C: executed
-- task D: failed
-
-A retry only considers task D. Previously successful tasks are not recreated.
-
 ## Safety
 
 The agent does not help fabricate a medical excuse or repeatedly contact someone who has not responded.
@@ -100,6 +87,8 @@ It also treats pasted material as untrusted content. Instructions inside a paste
 ## Shared scenarios
 
 See `scenario_results.md`.
+
+See [scenario_results.md](scenario_results.md).
 
 ### Summary
 
