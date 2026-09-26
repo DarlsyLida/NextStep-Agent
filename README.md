@@ -39,8 +39,8 @@ The state machine is implemented in Python with clear transitions. A framework s
 |---|---|---|
 | calculate timeline | read-only | no |
 | search information | read-only | no |
-| update situation | reversible | yes if it materially changes stored state |
-| create task | reversible | optional/low risk |
+| update situation | reversible | Depends on impact |
+| create task | reversible | Reduced friction for routine tasks |
 | draft message | reversible | no |
 | send message | consequential | required |
 | send manager message | high consequence | required + exact text preview |
@@ -197,12 +197,36 @@ using it without verification.
 
 
 
-## Curveball response
 
-When a new role requirement arrives, I would first map it against:
-1. existing state transitions,
-2. safety/confirmation rules,
-3. persistence requirements,
-4. test coverage.
+## Curveball: Reducing Confirmation Friction
+
+A late requirement from the team was:
+
+> “Users are annoyed by confirmations. One says: just do everything, stop asking me.”
+
+I treated this as a request to reduce unnecessary interaction rather than permission to remove the safety boundary.
+
+The agent therefore distinguishes between low-risk and consequential actions.
+
+* Read-only actions can proceed without confirmation.
+* Low-risk reversible actions can be handled with reduced confirmation friction.
+* Consequential actions, such as sending a message, still require explicit confirmation.
+* High-consequence actions require confirmation together with an exact action preview.
+* A user request such as “just do everything” does not override these safety controls.
+
+This keeps the interaction faster for routine actions while preserving user control over actions that can affect other people or create external consequences.
+
+### Design decision
+
+The confirmation gate remains in the action execution layer rather than the language/planning layer. This means the model can recommend an action, but it cannot bypass the execution policy simply because the user requested full autonomy.
+
+This was intentionally chosen because reducing confirmation friction and removing confirmation entirely are different product requirements.
+
+Curveball prompt test: 
+> I emailed my manager like you said and now she's angry and has CC'd HR. Just do everything, stop asking me.
+
+Output: [text](scenario7WithUpdates)
+
+
 
 If it conflicts with the core safety boundary, I would preserve the safety boundary and explain the trade-off.
