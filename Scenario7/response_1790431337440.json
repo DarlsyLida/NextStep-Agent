@@ -1,0 +1,140 @@
+{
+  "run_id": "run_597de86811",
+  "mode": "standard",
+  "situation_id": "sit_42vxqv",
+  "version": 1,
+  "summary": "The email NextStep suggested didn't land the way it was meant to: your manager is upset and has copied HR. That feels alarming, but HR being copied doesn't automatically mean you're in trouble. Right now the goal is to cool things down, not to win the argument.",
+  "issues": [
+    {
+      "id": "iss_1",
+      "title": "Manager upset after your email",
+      "category": "work_study",
+      "urgency": 5,
+      "deadline": null,
+      "depends_on": []
+    },
+    {
+      "id": "iss_2",
+      "title": "HR copied into the thread",
+      "category": "work_study",
+      "urgency": 4,
+      "deadline": null,
+      "depends_on": []
+    },
+    {
+      "id": "iss_3",
+      "title": "The issue your email was originally about",
+      "category": "work_study",
+      "urgency": 2,
+      "deadline": null,
+      "depends_on": [
+        "iss_1"
+      ]
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "issue_id": "iss_1",
+      "action": "Wait at least an hour, then send a short, calm reply: acknowledge that your email landed badly and ask for a quick call to talk it through",
+      "reason": "A fast reply to an angry email usually escalates it. A short, calm one with an offer to talk moves the conversation out of writing.",
+      "estimated_minutes": 20
+    },
+    {
+      "rank": 2,
+      "issue_id": "iss_2",
+      "action": "Keep the full thread, including your original email, and note down the timeline while it is fresh: dates and facts only",
+      "reason": "If HR does get in touch, a clear record of what was said keeps the conversation about facts.",
+      "estimated_minutes": 10
+    },
+    {
+      "rank": 3,
+      "issue_id": "iss_3",
+      "action": "Park the original issue for now and raise it again on the call, not over email",
+      "reason": "It still matters, but it will go better once the tension has dropped.",
+      "estimated_minutes": 5
+    }
+  ],
+  "next_action": {
+    "text": "Don't reply yet. Take an hour, then write three calm lines asking your manager for a short call.",
+    "issue_id": "iss_1",
+    "why": "Replying while things are heated is the quickest way to make this worse, and waiting costs you nothing."
+  },
+  "clarifying_questions": [
+    {
+      "id": "q_1",
+      "question": "What was your original email about?",
+      "options": [
+        "Workload or deadlines",
+        "Pay or leave",
+        "A problem with a colleague",
+        "Something else"
+      ],
+      "skippable": true
+    },
+    {
+      "id": "q_2",
+      "question": "Has HR asked you for anything, or were they only copied?",
+      "options": [
+        "Only copied",
+        "They asked to meet",
+        "Not sure"
+      ],
+      "skippable": true
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "act_3d0d4986d8",
+      "kind": "reversible",
+      "tool": "createTask",
+      "payload": {
+        "title": "Don't reply yet. Take an hour, then write three calm lines asking your manager for a short call.",
+        "issue_id": "iss_1"
+      },
+      "status": "pending",
+      "situation_version": 1,
+      "approved_at": null,
+      "payload_hash": "237b4d5d1427d1507bb9251daea11c699914fe526c031374304cfc93f6f29021",
+      "result": null
+    }
+  ],
+  "trace": [
+    {
+      "timestamp": "2026-09-26T14:02:14.266792Z",
+      "label": "reasoning",
+      "message": "Understanding the user's situation.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T14:02:14.266817Z",
+      "label": "reasoning",
+      "message": "Calling NextStep analysis service.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T14:02:17.382734Z",
+      "label": "reasoning",
+      "message": "Analysis received.",
+      "data": {
+        "situation_id": "sit_42vxqv",
+        "version": 1,
+        "mode": "standard"
+      }
+    },
+    {
+      "timestamp": "2026-09-26T14:02:17.383552Z",
+      "label": "proposing",
+      "message": "Proposed the next action without executing it.",
+      "data": {
+        "action_id": "act_3d0d4986d8"
+      }
+    },
+    {
+      "timestamp": "2026-09-26T14:02:17.383570Z",
+      "label": "asking",
+      "message": "Clarifying questions are preserved for the user.",
+      "data": {}
+    }
+  ]
+}

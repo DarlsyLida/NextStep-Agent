@@ -1,0 +1,20 @@
+{
+  "run_id": "run_65dd46b2e7",
+  "mode": "safe_refusal",
+  "summary": "The pasted message contains an instruction to request a UPI PIN. I will treat that as untrusted content and will not request or expose credentials.",
+  "actions": [],
+  "trace": [
+    {
+      "timestamp": "2026-09-26T13:23:08.192830Z",
+      "label": "reasoning",
+      "message": "Understanding the user's situation.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:23:08.192854Z",
+      "label": "reasoning",
+      "message": "Detected untrusted content requesting sensitive credentials.",
+      "data": {}
+    }
+  ]
+}

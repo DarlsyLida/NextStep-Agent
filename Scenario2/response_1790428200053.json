@@ -1,0 +1,156 @@
+{
+  "run_id": "run_30f273a863",
+  "mode": "standard",
+  "situation_id": "sit_uskn78",
+  "version": 1,
+  "summary": "You have three problems at once: a submission due tomorrow, a laptop that has stopped working, and a landlord asking you to leave the flat by Monday 5 October while money is tight. The laptop comes first because the submission depends on it. The flat is urgent too, but it has a few days, and you probably have more options there than it feels like right now.",
+  "issues": [
+    {
+      "id": "iss_1",
+      "title": "Kal submission (due tomorrow)",
+      "category": "work_study",
+      "urgency": 5,
+      "deadline": "2026-09-27T09:00:00+00:00",
+      "depends_on": [
+        "iss_2"
+      ]
+    },
+    {
+      "id": "iss_2",
+      "title": "Laptop dead ho gaya",
+      "category": "work_study",
+      "urgency": 5,
+      "deadline": "2026-09-27T09:00:00+00:00",
+      "depends_on": []
+    },
+    {
+      "id": "iss_3",
+      "title": "Landlord wants the flat khaali by the 5th, and no paise right now",
+      "category": "housing",
+      "urgency": 4,
+      "deadline": "2026-10-05T23:59:00+00:00",
+      "depends_on": []
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "issue_id": "iss_2",
+      "action": "Get onto a working computer tonight: borrow a laptop from a friend or flatmate, or use a college lab or cyber café, and pull your files from email, Drive or your phone",
+      "reason": "Nothing on the submission can happen without a working computer. Repairing the laptop can wait until after the deadline.",
+      "estimated_minutes": 30
+    },
+    {
+      "rank": 2,
+      "issue_id": "iss_1",
+      "action": "Finish the parts that carry the most marks first; if you cannot make it, email your teacher tonight and ask for a short extension, mentioning the laptop",
+      "reason": "It is due in about 20 hours if it is a morning deadline. Something complete enough and on time usually beats something perfect and late.",
+      "estimated_minutes": 180
+    },
+    {
+      "rank": 3,
+      "issue_id": "iss_3",
+      "action": "After you submit, reply to your landlord asking for the notice in writing and for more time, and check the notice period in your rental agreement",
+      "reason": "A few days is very short notice. Rental agreements usually set a notice period, often a month, so you may have more time than it sounds. Getting it in writing protects you either way.",
+      "estimated_minutes": 20
+    },
+    {
+      "rank": 4,
+      "issue_id": "iss_3",
+      "action": "Write down how much you need for the next month (rent, deposit, moving) and who you could ask for a short-term loan",
+      "reason": "You do not need to solve the money tonight, but knowing the exact number makes the landlord conversation and any borrowing much easier.",
+      "estimated_minutes": 15
+    }
+  ],
+  "next_action": {
+    "text": "Message two friends or flatmates now asking to borrow a laptop tonight for a few hours.",
+    "issue_id": "iss_2",
+    "why": "The submission is blocked until you have a working computer, and asking takes two minutes."
+  },
+  "clarifying_questions": [
+    {
+      "id": "q_1",
+      "question": "What time is the submission due tomorrow?",
+      "options": [
+        "Morning",
+        "Afternoon",
+        "Midnight",
+        "Not sure"
+      ],
+      "skippable": true
+    },
+    {
+      "id": "q_2",
+      "question": "Are your files saved anywhere other than the laptop?",
+      "options": [
+        "Yes (email, Drive or pen drive)",
+        "No",
+        "Not sure"
+      ],
+      "skippable": true
+    },
+    {
+      "id": "q_3",
+      "question": "Did your landlord give you the notice in writing?",
+      "options": [
+        "Yes, by message or letter",
+        "No, only verbally"
+      ],
+      "skippable": true
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "act_2ff33c080c",
+      "kind": "reversible",
+      "tool": "createTask",
+      "payload": {
+        "title": "Message two friends or flatmates now asking to borrow a laptop tonight for a few hours.",
+        "issue_id": "iss_2"
+      },
+      "status": "pending",
+      "situation_version": 1,
+      "approved_at": null,
+      "payload_hash": "c0df3a7d122df0ae6da07c3ea7197322470cd2b39ca1f0595e04ac16d65f3a22",
+      "result": null
+    }
+  ],
+  "trace": [
+    {
+      "timestamp": "2026-09-26T13:09:57.099724Z",
+      "label": "reasoning",
+      "message": "Understanding the user's situation.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:09:57.099747Z",
+      "label": "reasoning",
+      "message": "Calling NextStep analysis service.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:10:00.002009Z",
+      "label": "reasoning",
+      "message": "Analysis received.",
+      "data": {
+        "situation_id": "sit_uskn78",
+        "version": 1,
+        "mode": "standard"
+      }
+    },
+    {
+      "timestamp": "2026-09-26T13:10:00.002189Z",
+      "label": "proposing",
+      "message": "Proposed the next action without executing it.",
+      "data": {
+        "action_id": "act_2ff33c080c"
+      }
+    },
+    {
+      "timestamp": "2026-09-26T13:10:00.002201Z",
+      "label": "asking",
+      "message": "Clarifying questions are preserved for the user.",
+      "data": {}
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "run_e3ca39f8ff",
+  "mode": "support",
+  "summary": "You sound overwhelmed, so I won't turn this into a normal productivity plan. Please consider reaching out to someone you trust and getting immediate local help if you may be in danger.",
+  "actions": [],
+  "trace": [
+    {
+      "timestamp": "2026-09-26T13:20:26.480851Z",
+      "label": "reasoning",
+      "message": "Understanding the user's situation.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:20:26.480872Z",
+      "label": "reasoning",
+      "message": "Detected possible emotional distress; normal task planning is paused.",
+      "data": {}
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "run_id": "run_30f273a863",
+  "trace": [
+    {
+      "timestamp": "2026-09-26T13:09:57.099724Z",
+      "label": "reasoning",
+      "message": "Understanding the user's situation.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:09:57.099747Z",
+      "label": "reasoning",
+      "message": "Calling NextStep analysis service.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:10:00.002009Z",
+      "label": "reasoning",
+      "message": "Analysis received.",
+      "data": {
+        "situation_id": "sit_uskn78",
+        "version": 1,
+        "mode": "standard"
+      }
+    },
+    {
+      "timestamp": "2026-09-26T13:10:00.002189Z",
+      "label": "proposing",
+      "message": "Proposed the next action without executing it.",
+      "data": {
+        "action_id": "act_2ff33c080c"
+      }
+    },
+    {
+      "timestamp": "2026-09-26T13:10:00.002201Z",
+      "label": "asking",
+      "message": "Clarifying questions are preserved for the user.",
+      "data": {}
+    }
+  ]
+}

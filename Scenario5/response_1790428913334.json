@@ -1,0 +1,20 @@
+{
+  "run_id": "run_97a94f124f",
+  "mode": "out_of_scope",
+  "summary": "NextStep is for deciding what to do next, not completing an assignment. I can help break the assignment into manageable next steps.",
+  "actions": [],
+  "trace": [
+    {
+      "timestamp": "2026-09-26T13:21:53.309656Z",
+      "label": "reasoning",
+      "message": "Understanding the user's situation.",
+      "data": {}
+    },
+    {
+      "timestamp": "2026-09-26T13:21:53.309674Z",
+      "label": "reasoning",
+      "message": "Request is outside the intended NextStep use case.",
+      "data": {}
+    }
+  ]
+}
