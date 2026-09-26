@@ -225,7 +225,7 @@ This was intentionally chosen because reducing confirmation friction and removin
 Curveball prompt test: 
 > I emailed my manager like you said and now she's angry and has CC'd HR. Just do everything, stop asking me.
 
-Output: [text](scenario7WithUpdates)
+Output: [View The new Output after making changes](scenario7WithUpdates)
 
 
 
