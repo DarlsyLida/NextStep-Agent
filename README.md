@@ -24,8 +24,9 @@ The agent can:
 
 ## Architecture
 
-The figure below show the fow how this NextStep Agent functions.
-![alt text](<User Action.png>)
+The figure below show the flow how this NextStep Agent functions.
+<img width="1338" height="1274" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ba1e4659-7cbe-45b8-89de-52555863a29e" />
+
 
 ### Why this technique
 
